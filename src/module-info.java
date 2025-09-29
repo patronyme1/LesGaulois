@@ -1,0 +1,3 @@
+module LesGaulois {
+	exports personnages;
+}

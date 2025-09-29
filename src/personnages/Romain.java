@@ -29,4 +29,9 @@ public class Romain {
 			parler("J'abandonne...");
 		}
 	}
+	
+	@Override
+	public String toString() {
+		return nom;
+	}
 }
