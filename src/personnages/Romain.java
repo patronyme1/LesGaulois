@@ -20,6 +20,10 @@ public class Romain {
 	private String prendreParole() {
 		return "Le romain " + nom + " : ";
 	}
+	
+	private boolean isInvariantVerified() {
+		return force >=0;
+	}
 
 	public void recevoirCoup(int forceCoup) {
 		force -= forceCoup;

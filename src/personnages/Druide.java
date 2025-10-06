@@ -31,6 +31,14 @@ public class Druide {
 	}
 	
 	public void booster(Gaulois gaulois) {
-		if (gaulois.getNom())
-	}
+        if (gaulois.getNom().equals("Obélix")) {
+            parler("Non, Obélix Non !... Et tu le sais très bien !");
+        } else if (chaudron.resterPotion()) {
+            int forcePotion = chaudron.prendreLouche();
+            parler("Tiens " + gaulois.getNom() + " un peu de potion magique.");
+            gaulois.boirePotion(forcePotion);
+        } else {
+            parler("Désolé " + gaulois.getNom() + " je n'ai plus de potion.");
+        }
+    }
 }
